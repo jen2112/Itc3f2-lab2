@@ -37,7 +37,7 @@ class MainController extends BaseController
     public function insert(){
         $data=['File'=>$this->request->getVar('File'),
         'Artist'=>$this->request->getVar('Artist'),
-        'MusicName'=>$this->request->getVar('MusicName'),
+        'Title'=>$this->request->getVar('MusicName'),
     ];
     $this->music->save($data);
     return redirect()->to('PlayTrack');

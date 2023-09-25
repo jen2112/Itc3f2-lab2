@@ -15,7 +15,7 @@
             <input type="hidden" name="ID">
             <select  name="playlist" class="form-control" >
                     <?php foreach($play as $play): ?>
-              <option value="playlist"><?= $play['playlist']?></option>
+              <option value="playlist"><?= $play['PlayList']?></option>
             <?php endforeach; ?>
             </select> 
             <input type="submit" name="add">

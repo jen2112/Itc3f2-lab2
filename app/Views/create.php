@@ -12,7 +12,7 @@
           <div class="modal-body">
           <form action="/save" method="post">
             <!-- <p id="modalData"></p> -->
-            <input type="hidden" id="MusicId" name="MusicId">
+            <input type="hidden" id="musicId" name="musicId">
             <input  name="playlist" class="form-control" >
             <br>
               

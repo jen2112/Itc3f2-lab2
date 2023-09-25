@@ -65,12 +65,12 @@
   // Get references to the button and modal
   const modal = $("#myModal");
   const modalData = $("#modalData");
-  const musicID = $("#musicID");
+  const musicId = $("#musicId");
   // Function to open the modal with the specified data
   function openModalWithData(dataId) {
     // Set the data inside the modal content
     modalData.text("Data ID: " + dataId);
-    musicID.val(dataId);
+    musicId.val(dataId);
     // Display the modal
     modal.css("display", "block");
   }

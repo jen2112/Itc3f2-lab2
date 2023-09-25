@@ -1,0 +1,13 @@
+CRITICAL - 2023-09-25 12:20:30 --> Undefined array key "playlist"
+in APPPATH\Views\playlist.php on line 18.
+ 1 APPPATH\Views\playlist.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "playlist"', 'C:\\laragon\\www\\Itc3f2-lab2\\app\\Views\\playlist.php', 18)
+ 2 APPPATH\Views\songs.php(58): include('C:\\laragon\\www\\Itc3f2-lab2\\app\\Views\\playlist.php')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Itc3f2-lab2\\app\\Views\\songs.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('songs', [], true)
+ 6 APPPATH\Controllers\MainController.php(28): view('songs', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->songs()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Itc3f2-lab2\\public\\index.php')
