@@ -11,14 +11,16 @@
           <!-- Modal body -->
           <div class="modal-body">
           <form action="/insert" method="post">
-            <br>
+            
             <!-- <p id="modalData"></p> -->
             <input type="hidden" id="ID" name="ID">
             <input type="File" name="File" required>
-            <br><br>
+            <br>
+            <br>
             <label>Artist:</label>
             <input type="text" name="Artist" placeholder="Artist" required>
-            <br><br>
+            <br>
+            <br>
             <label>Title:</label>
             <input type="text" name="MusicName" placeholder="Name" required><br>
             <br>

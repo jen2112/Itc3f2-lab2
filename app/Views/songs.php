@@ -47,7 +47,7 @@
     <?php if ($music): ?>
         <?php foreach ($music as $msc): ?>
             <li data-src="<?=base_url(); ?>/songplayer/<?=$msc['File'];?>.mp3"><?=$msc['File'];?>
-            <a href="/addPlayList" data-bs-toggle="modal"data-bs-toggle="#addPlaylist">
+            <a href="/addplaylist" data-bs-toggle="modal"data-bs-toggle="#addPlaylist">
                 <i class="fa-solid fa-plus"></i>
             </a>
             </li>
@@ -65,12 +65,12 @@
   // Get references to the button and modal
   const modal = $("#myModal");
   const modalData = $("#modalData");
-  const musicId = $("#musicId");
+  const MusicId = $("#MusicId");
   // Function to open the modal with the specified data
   function openModalWithData(dataId) {
     // Set the data inside the modal content
     modalData.text("Data ID: " + dataId);
-    musicId.val(dataId);
+    MusicId.val(dataId);
     // Display the modal
     modal.css("display", "block");
   }
@@ -87,14 +87,14 @@
     </script>
     <script>
         const audio = document.getElementById('audio');
-        const playlist = document.getElementById('playlist');
-        const playlistItems = playlist.querySelectorAll('li');
+        const PlayList = document.getElementById('PlayList');
+        const PlayListItems = playlist.querySelectorAll('li');
 
         let currentTrack = 0;
 
         function playTrack(trackIndex) {
-            if (trackIndex >= 0 && trackIndex < playlistItems.length) {
-                const track = playlistItems[trackIndex];
+            if (trackIndex >= 0 && trackIndex < PlayListItems.length) {
+                const track = PlayListItems[trackIndex];
                 const trackSrc = track.getAttribute('data-src');
                 audio.src = trackSrc;
                 audio.play();
@@ -103,16 +103,16 @@
         }
 
         function nextTrack() {
-            currentTrack = (currentTrack + 1) % playlistItems.length;
+            currentTrack = (currentTrack + 1) % PlayListItems.length;
             playTrack(currentTrack);
         }
 
         function previousTrack() {
-            currentTrack = (currentTrack - 1 + playlistItems.length) % playlistItems.length;
+            currentTrack = (currentTrack - 1 + PlayListItems.length) % PlayListItems.length;
             playTrack(currentTrack);
         }
 
-        playlistItems.forEach((item, index) => {
+        PlayListItems.forEach((item, index) => {
             item.addEventListener('click', () => {
                 playTrack(index);
             });

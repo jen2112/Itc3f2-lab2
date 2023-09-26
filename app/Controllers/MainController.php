@@ -31,7 +31,7 @@ class MainController extends BaseController
     public function save(){
         $data = ['playlist' => $this->request->getVar('playlist')];
         $this->play->save($data);
-        return redirect()->to('PlayTrack');
+        return redirect()->to('PlayTrace');
     }
 
     public function insert(){
@@ -40,7 +40,7 @@ class MainController extends BaseController
         'Title'=>$this->request->getVar('MusicName'),
     ];
     $this->music->save($data);
-    return redirect()->to('PlayTrack');
+    return redirect()->to('PlayTrace');
     }
 
     public function search(){

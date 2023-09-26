@@ -12,12 +12,12 @@
           <div class="modal-body">
           <form action="/save" method="post">
             <!-- <p id="modalData"></p> -->
-            <input type="hidden" id="musicId" name="musicId">
+            <input type="hidden" id="MusicId" name="MusicId">
             <input  name="playlist" class="form-control" >
             <br>
               
 
-           
+           <br>
             <input type="submit" name="Save">
             </form>
           </div>
